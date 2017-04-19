@@ -1,0 +1,52 @@
+buildscript {
+	//这个插件有三个作用：1.会将工程编译成一个大的jar包；2.搜索public static void main()方法，将方法所在的类标记为可运行的类；3.根据Spring-boot的版本号自动去匹配所依赖的jar包的版本号
+//    dependencies {
+//        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.1.RELEASE")
+//    }
+}
+
+//dependency-management-plugin
+plugins {
+    id "io.spring.dependency-management" version "1.0.1.RELEASE"
+}
+
+dependencyManagement {
+     dependencies {
+          dependency 'org.springframework:spring-webmvc:4.3.7.RELEASE'
+     }
+}
+
+apply plugin: "java"
+apply plugin: "war"
+apply plugin: "eclipse-wtp"
+
+// 仓库地址
+repositories{
+  mavenLocal()
+  mavenCentral()
+}
+
+
+// 依赖的jar包
+dependencies{
+	//spring
+	compile 'org.springframework:spring-webmvc:4.3.7.RELEASE'
+	//servlet
+	compile 'javax.servlet:servlet-api:2.5'
+	//log
+	compile 'log4j:log4j:1.2.17'
+	//messageConvert:json
+	compile 'com.fasterxml.jackson.core:jackson-databind:2.8.6' //用于让Spring注册MappingJackson2HttpMessageConverter
+	//Spring data jpa 
+	compile 'org.springframework.data:spring-data-jpa:1.11.1.RELEASE'
+	//hibernate
+	compile 'org.hibernate:hibernate-core:5.2.8.Final'
+	//BasicDataSource
+	compile 'commons-dbcp:commons-dbcp:1.4'
+	//Mysql driver
+	compile 'mysql:mysql-connector-java:6.0.6'
+	//lombok
+	// https://mvnrepository.com/artifact/org.projectlombok/lombok
+	compile 'org.projectlombok:lombok:1.16.16'
+	
+}
