@@ -7,6 +7,6 @@
 ![设置web项目的根路径](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/1.PNG)
 3. 启动web工程。
 4. 打开浏览器访问访问http://localhost:8080/blog/login
-![登录界面](spring-mvc-blog/images/2.png)
+![登录界面](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/2.PNG)
 5. 输入用户名:admin,密码：admin然后点击Sign in，进入blog的主页面
 
