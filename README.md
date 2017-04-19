@@ -4,9 +4,9 @@
 #### 系统使用 ####
 1. 将工程下载下来后，执行build.bat脚步(注意请先安装Gradle软件)。
 2. 将工程导入到eclipse中，设置web项目的根路径，例如将项目的根路径设置为"blog"。
-![设置web项目的根路径](./images/1.png)
+![设置web项目的根路径](https://github.com/weieyuan/spring-mvc-blog/tree/master/images/1.png)
 3. 启动web工程。
 4. 打开浏览器访问访问http://localhost:8080/blog/login
-![登录界面](./images/2.png)
+![登录界面](https://github.com/weieyuan/spring-mvc-blog/tree/master/images/2.png)
 5. 输入用户名:admin,密码：admin然后点击Sign in，进入blog的主页面
 
