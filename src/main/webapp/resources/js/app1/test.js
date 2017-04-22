@@ -166,7 +166,8 @@ define(["widget/blog_list", "app1/store", "widget/utils","widget/prompt","tinymc
                 else{
                     Object.assign(res, {
                         title: title,
-                        summary: summary
+                        summary: summary,
+                        timestamp: null//待修改更新时间的bug
                     });
                     Object.assign(res.detail, {
                         content: content
