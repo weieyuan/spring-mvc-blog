@@ -20,7 +20,7 @@
 ![修改数据库信息](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/3.png)
 4. 启动web工程。
 5. 打开浏览器访问访问http://localhost:8080/blog/login
-![登录界面](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/2.png)
+![登录界面](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/2.PNG)
 6. 输入用户名:admin,密码：admin然后点击Sign in，进入blog的主页面
 ![主界面](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/4.png)
 7. 点击"Write Blog"进入blog编写界面
