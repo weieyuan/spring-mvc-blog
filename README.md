@@ -17,19 +17,19 @@
 2. 将工程导入到eclipse中，设置web项目的根路径，例如将项目的根路径设置为"blog"。
 ![设置web项目的根路径](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/1.PNG)
 3. 根据需要修改数据库名称/端口号/用户名/密码等信息(数据库的配置文件src\main\resources\dataconfig.properties)
-![修改数据库信息](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/3.PNG)
+![修改数据库信息](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/3.png)
 4. 启动web工程。
 5. 打开浏览器访问访问http://localhost:8080/blog/login
-![登录界面](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/2.PNG)
+![登录界面](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/2.png)
 6. 输入用户名:admin,密码：admin然后点击Sign in，进入blog的主页面
-![主界面](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/4.PNG)
+![主界面](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/4.png)
 7. 点击"Write Blog"进入blog编写界面
-![编写博客](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/5.PNG)
+![编写博客](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/5.png)
 8. 点击"save"保存博客
-![编写博客](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/6.PNG)
+![编写博客](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/6.png)
 9. 点击"Edit"可以进入博客编辑界面
 10. 点击"Read More"可以查看博客的详情
-![编写博客](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/7.PNG)
+![编写博客](https://github.com/weieyuan/spring-mvc-blog/blob/master/images/7.png)
 
 
 
