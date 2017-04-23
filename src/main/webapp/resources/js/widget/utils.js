@@ -18,6 +18,9 @@ define(['jquery'], function($) {
 				}
 			},
 			error: function(jqXHR, typeError) {
+				if(jqXHR.getResponseHeader("Content-Type") === "text/html"){
+					window.location.href = jqXHR.getResponseHeader("url");
+				}
 				console.log(jqXHR);
 				console.log(typeError);
 			}

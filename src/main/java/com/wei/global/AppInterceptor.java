@@ -19,11 +19,21 @@ public class AppInterceptor extends HandlerInterceptorAdapter {
 			return true;
 		}
 		HttpSession session = request.getSession(false);
-		if (null != session && null != session.getAttribute("userName")) 
-		{
+		if (null != session && null != session.getAttribute("userName")) {
 			return true;
 		}
-		response.sendRedirect(request.getContextPath() + "/login");
+
+		String reqType = request.getHeader("X-Requested-With");
+		// 如果是ajax请求
+		if ("XMLHttpRequest".equals(reqType)) {
+			response.setContentType("text/html");
+			response.setHeader("url", request.getContextPath() + "/login");
+		}
+		// 如果是普通请求
+		else {
+			response.sendRedirect(request.getContextPath() + "/login");
+		}
+
 		return false;
 	}
 
